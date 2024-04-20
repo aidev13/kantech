@@ -1,0 +1,140 @@
+:root {
+   --inputColor-1: #63FF03;
+   --inputColor-2: #03A4FF;
+   --d0: green;
+   --d1: white;
+   --grd: black;
+   --led: rgb(110, 28, 28);
+   --power: red;
+   --terminal-bg-color: cornsilk;
+}
+
+body{
+   margin: 20px;
+   font-size: 24px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+
+
+#title {
+   display: flex;
+   justify-content: center;
+}
+
+#mainContainer {
+   display: flex;
+   justify-content: center;
+}
+
+.text-format {
+   padding:3px;
+   font-size: 8px;
+   writing-mode: vertical-rl;
+   text-orientation: mixed;
+ }
+
+
+/* === INPUTS === */
+
+.zoneInputSize {
+   width: 120px;
+   height: 40px;
+   margin: .5px;
+}
+
+.inputGrid {
+   display: grid;
+   grid-template-rows: 40px 15px;
+   grid-template-columns: repeat(6, 1fr);
+   border: solid 1px black;
+   border-radius: 2PX;
+   background-color: var(--terminal-bg-color);
+}
+
+.inputGrid > * {
+   border-bottom: 1px solid black;
+   border-right: 1px solid black;
+}
+
+.inputGrid > *:nth-child(6) {
+   border-right: none;
+ }
+
+ .input-title-format {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size:  8px;
+   font-weight: bold;
+   grid-column: span 6;
+   border: none;
+ }
+
+ .highlight-green {
+ background-color: var(--inputColor-1);
+}
+
+ .highlight-blue {
+ background-color: var(--inputColor-2);
+}
+
+/* === READER === */
+
+.readerGrid {
+   display: grid;
+   grid-template-rows: 40px 15px;
+   grid-template-columns: repeat(9, 1fr);
+   border: solid 1px black;
+   border-radius: 2px;
+   background-color: var(--terminal-bg-color)
+}
+
+.readerSize {
+   width: 180px;
+   height: 40px;
+   margin: .5px;
+}
+
+.readerGrid > * {
+   border-bottom: 1px solid black;
+   border-right: 1px solid black;
+}
+
+.readerGrid > *:nth-child(9) {
+   border-right: none;
+ }
+
+ .reader-title-format {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size:  8px;
+   font-weight: bold;
+   grid-column: span 9;
+   border: none;
+ }
+
+ .reader_d0 {
+   background-color: var(--d0);
+   color: white;
+ }
+
+ .reader_d1 {
+   background-color: var(--d1);
+ }
+
+ .reader_grd {
+   background-color: var(--grd);
+   color: white;
+ }
+
+ .reader_led {
+   background-color: var(--led);
+   color: white;
+ }
+
+ .reader__12v {
+   background-color: var(--power);
+   color: white;
+ }
