@@ -1,6 +1,5 @@
 :root {
-   --inputColor-1: #63FF03;
-   --inputColor-2: #03A4FF;
+   --data-green: #50d100;
    --d0: green;
    --d1: white;
    --grd: black;
@@ -10,6 +9,7 @@
    --led-off: rgb(254, 252, 192);
    --led-12v: rgb(0, 207, 0);
    --led-24v: rgb(0, 140, 255);
+   --led-12v-shadow: rgb(159, 251, 159);
 }
 
 body{
@@ -85,15 +85,41 @@ body{
 
  .d8-text-format {
    display: flex;
-  padding: 3px;
-  font-size: 8px;
-  /* writing-mode: vertical-rl; */
-  /* text-orientation: mixed; */
-  text-align: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  flex-direction: row;
+   /* margin: auto; */
+   font-size: 8px;
+   /* writing-mode: vertical-rl; */
+   /* text-orientation: mixed; */
+   text-align: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+   align-content: center;
+   align-items: baseline;
+   justify-content: space-around;
+   text-align: center;
  }
+
+ #positive, #negative {
+  padding: 2px 3px 2px 3px
+ }
+
+ ._12vled {
+   background-color: var(--led-12v);
+   box-shadow: var(--led-12v-shadow) 0px 0px 3px 3px, var(--led-12v-shadow) 0px 4px 6px -1px, var(--led-12v-shadow) 0px 1px 0px inset;
+   border: 1px solid #45b500;
+ }
+
+ .positiveLead {
+   background-color: red;
+   color: white;
+   font-weight: bold;
+ }
+
+ .negativeLead {
+   background-color: black;
+   color: white;
+   font-weight: bold;
+ }
+
 
 /* === INPUTS === */
 
@@ -131,12 +157,17 @@ body{
    border: none;
  }
 
- .highlight-green {
- background-color: var(--inputColor-1);
+.highlight-door {
+ background-color: var(--data-green);
 }
 
- .highlight-blue {
- background-color: var(--inputColor-2);
+.highlight-common {
+   background-color: white;
+   font-weight: bold;
+}
+
+.highlight-rex {
+ background-color: var(--data-green);
 }
 
 /* === READER === */
