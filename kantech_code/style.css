@@ -6,7 +6,10 @@
    --grd: black;
    --led: rgb(110, 28, 28);
    --power: red;
-   --terminal-bg-color: cornsilk;
+   --terminal-bg-color: rgba(161, 253, 167, 0.997);
+   --led-off: rgb(254, 252, 192);
+   --led-12v: rgb(0, 207, 0);
+   --led-24v: rgb(0, 140, 255);
 }
 
 body{
@@ -17,14 +20,10 @@ body{
 
 
 
-#title {
+#title, #inputReaderContainer, #d8Container, .circleContainer {
    display: flex;
    justify-content: center;
-}
-
-#mainContainer {
-   display: flex;
-   justify-content: center;
+   align-content: center;
 }
 
 .text-format {
@@ -34,6 +33,67 @@ body{
    text-orientation: mixed;
  }
 
+ /* === D8 === */
+
+ .circle {
+   width: 12px;
+   height: 12px;
+   border: 1px solid black;
+   border-radius: 50%;
+   background-color: var(--led-off);
+   margin: auto;
+ }
+
+ .circleSize {
+   display: flex;
+   width: 320px;
+   margin-bottom: 5px;
+ }
+
+ .d8Size {
+   width: 320px;
+   height: 40px;
+   /* margin: 20px; */
+ }
+
+ .d8Grid {
+    display: grid;
+    grid-template-rows: 20px 15px;
+    grid-template-columns: repeat(8, 1fr);
+    border: solid 1px black;
+    border-radius: 2PX;
+    background-color: var(--terminal-bg-color);
+ }
+
+ .d8Grid > *{
+   border-bottom: 1px solid black;
+   border-right: 1px solid black;
+ }
+
+ .d8Grid :nth-child(8) {
+   border-right: none;
+ }
+
+ .d8-title-format {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size:  8px;
+   font-weight: bold;
+   border: none;
+ }
+
+ .d8-text-format {
+   display: flex;
+  padding: 3px;
+  font-size: 8px;
+  /* writing-mode: vertical-rl; */
+  /* text-orientation: mixed; */
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+ }
 
 /* === INPUTS === */
 
@@ -57,7 +117,7 @@ body{
    border-right: 1px solid black;
 }
 
-.inputGrid > *:nth-child(6) {
+.inputGrid > :nth-child(6) {
    border-right: none;
  }
 
@@ -122,6 +182,7 @@ body{
 
  .reader_d1 {
    background-color: var(--d1);
+   font-weight: bold;
  }
 
  .reader_grd {

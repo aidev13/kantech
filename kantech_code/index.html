@@ -9,7 +9,72 @@
 
 <body>
    <h1 id="title">Kantech-400</h1>
-   <div id="mainContainer">
+   <p id="title">ABB Setup</p>
+
+   <!-- === D8 === -->
+   <div class="circleContainer">
+      <div class="circleSize">
+         <div id="out1" class="circle"></div>
+         <div id="out2" class="circle"></div>
+         <div id="out3" class="circle"></div>
+         <div id="out4" class="circle"></div>
+         <div id="out5" class="circle"></div>
+         <div id="out6" class="circle"></div>
+         <div id="out7" class="circle"></div>
+         <div id="out8" class="circle"></div>
+      </div>
+   </div>
+   <div id="d8Container">
+      <div class="d8Size">
+         <div class="d8Grid">
+            <div id="d1" class="d8-text-format">
+               <div id="positive">+</div>
+               <div id="negative">-</div>
+            </div>
+            <div id="d2" class="d8-text-format">
+               <div id="positive">+</div>
+               <div id="negative">-</div>
+            </div>
+            <div id="d3" class="d8-text-format">
+               <div id="positive">+</div>
+               <div id="negative">-</div>
+            </div>
+            <div id="d4" class="d8-text-format">
+               <div id="positive">+</div>
+               <div id="negative">-</div>
+            </div>
+            <div id="d5" class="d8-text-format">
+               <div id="positive">+</div>
+               <div id="negative">-</div>
+            </div>
+            <div id="d6" class="d8-text-format">
+               <div id="positive">+</div>
+               <div id="negative">-</div>
+            </div>
+            <div id="d7" class="d8-text-format">
+               <div id="positive">+</div>
+               <div id="negative">-</div>
+            </div>
+            <div id="d8" class="d8-text-format">
+               <div id="positive">+</div>
+               <div id="negative">-</div>
+            </div>
+            <div class="d8-title-format">OUT 1</div>
+            <div class="d8-title-format">OUT 2</div>
+            <div class="d8-title-format">OUT 3</div>
+            <div class="d8-title-format">OUT 4</div>
+            <div class="d8-title-format">OUT 5</div>
+            <div class="d8-title-format">OUT 6</div>
+            <div class="d8-title-format">OUT 7</div>
+            <div class="d8-title-format">OUT 8</div>
+         </div>
+      </div>
+
+   </div>
+
+   <br>
+
+   <div id="inputReaderContainer">
 
       <!-- === INPUTS === -->
       <div class="zoneInputSize">
@@ -31,7 +96,7 @@
             <div id="input_door2_zn7" class="text-format">ZN-7</div>
             <div id="input_door2_c2" class="text-format">C</div>
             <div id="input_door2_zn8" class="text-format">ZN-8</div>
-            <div class="input-title-format">- DOOR 2 -</div>
+            <div class="input-title-format">-INPUT DOOR 2 -</div>
          </div>
       </div>
 
@@ -47,7 +112,7 @@
             <div id='reader1-led' class="text-format">LED</div>
             <div id='reader1-buz' class="text-format">BUZ</div>
             <div id='reader1-_12v' class="text-format">+12V</div>
-            <div class="reader-title-format">-  READER DOOR 1 -</div>
+            <div class="reader-title-format">- READER DOOR 1 -</div>
          </div>
       </div>
 
@@ -62,18 +127,20 @@
             <div id='reader2-led' class="text-format">LED</div>
             <div id='reader2-buz' class="text-format">BUZ</div>
             <div id='reader2-_12v' class="text-format">+12V</div>
-            <div class="reader-title-format">-  READER DOOR 2 -</div>
+            <div class="reader-title-format">- READER DOOR 2 -</div>
          </div>
       </div>
 
 
    </div>
 
-   
 
 
-   <script src="components/input.js"></script>
+   <script type="module" src="index.js"></script>
+   <!-- <script type="module" src="components/input.js"></script> -->
+   <!-- <script src="components/input.js"></script>
    <script src="components/reader.js"></script>
+   <script src="components/d8outputs.js"></script> -->
 
 </body>
 
