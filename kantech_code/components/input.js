@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function inputDoor1() {
     const door = document.getElementById("input_door1_door")
     const common1 = document.getElementById("input_door1_c1")
     const rex = document.getElementById("input_door1_rex1")
@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
         common2.classList.remove("highlight-green")
     })
 
-});
+};
 
 
-document.addEventListener("DOMContentLoaded", function () {
+export function inputDoor2() {
    const door = document.getElementById("input_door2_door")
    const common1 = document.getElementById("input_door2_c1")
    const rex = document.getElementById("input_door2_rex")
@@ -97,5 +97,5 @@ document.addEventListener("DOMContentLoaded", function () {
        common2.classList.remove("highlight-blue")
    })
 
-});
+};
 
