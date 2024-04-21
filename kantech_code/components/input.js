@@ -1,6 +1,6 @@
 const door = document.getElementById("input_door1_door")
 const common1 = document.getElementById("input_door1_c1")
-const rex = document.getElementById("input_door1_rex1")
+const rex = document.getElementById("input_door1_rex")
 const zn3 = document.getElementById("input_door1_zn3")
 const common2 = document.getElementById("input_door1_c2")
 const zn4 = document.getElementById("input_door1_zn4")
